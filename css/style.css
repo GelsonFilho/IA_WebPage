@@ -1,0 +1,361 @@
+/* Estilos Gerais */
+
+html{
+	scroll-behavior: smooth; /* Deixar o scroll ser realizado de uma maneira suave quando clicado em algum link do menu */
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	/* Definição da fonte a ser utilizada no projeto */
+}
+
+p {
+	font-family: Georgia, "Times New Roman", serif;
+	/* Definição da fonte a ser utilizada nos parágrafos */
+	font-size: 14px;
+	/*Tamanho da fonte */
+	line-height: 20px;
+	/* Espaçamento entre as linhas */
+}
+
+img {
+	display: block;
+	/* Deixa a imagem num formato de bloco que significa que ela vai ocupar toda a largura dela mesma */
+	max-width: 100%;
+	/* Largura máxima da imagem definida para ser 100% do tamanho dela */
+}
+
+/* Header */
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: black;
+	padding: 10px 0;
+	z-index: 10;
+}
+
+.header_menu {
+	text-align: right;
+}
+
+.header_menu ul li {
+	display: inline-block;
+	margin-left: 25px;
+	margin-top: 20px;
+}
+
+.header_menu ul li a {
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px 0;
+}
+
+.header_menu ul li a:hover {
+	color: rgb(12, 104, 209);
+}
+
+.btn {
+	border: 3px solid #fec63e;
+	/* Borda do botão tem 3px e nessa cor */
+	padding: 10px 30px;
+	/*Espaçamento interno de 10px cima e baixo e 30px esquerda e direita */
+	color: #fec63e;
+	/* Cor do botão */
+	font-size: 14px;
+	/* tamanho da fonte do botão */
+	text-transform: uppercase;
+	/* Transforma todo o texto em maiúsculo */
+	font-weight: bold;
+	/* negrito */
+	letter-spacing: .1em;
+	/* Espaçamento entre as letras */
+}
+
+.btn:hover {
+	color: #fff;
+	/* Cor do botão quando passa o mouse por cima */
+	border-color: #fff;
+	/* Cor da borda do botão quando passa o mouse por cima dele */
+}
+
+.subtitulo {
+	font-size: 24px;
+	/* Tamanho da fonte do subtitulo */
+	line-height: 30px;
+	/* Espaçamento entre as linhas do subtitulo */
+	font-weight: bold;
+	/* Peso da fonte em negrito */
+	color: #000;
+	/* Cor */
+	text-transform: uppercase;
+	/* Transformando tudo em maiúsculo */
+	text-align: center;
+	/* Alinhando o subtítulo ao centro */
+	margin-bottom: 40px;
+	/* Espaçamento entre o Subtítulo e o conteúdo abaixo dele */
+}
+
+.subtitulo:after {
+	/* Código para criar a linha abaixo do subítulo */
+	content: "";
+	display: block;
+	/* Display block faz com que o elemento inicie na próxima linha */
+	width: 60px;
+	/* Largura da linha */
+	height: 3px;
+	/* Altura da linha */
+	background: #000;
+	/*Cor da linha */
+	margin: 8px auto;
+	/* Espaçamento de 8 px cima e baixo e utilizada propriedade auto para que os espaçamentos da esquerda e direita sejam feitos de forma automática para que a linha fique no centro da tela */
+}
+
+/* Banner Principal */
+
+.banner {
+	width: 100%;
+	/* Largura da imagem do banner em 100% da tela */
+	height: 380px;
+	/* Altura do banner */
+	background: url("../img/bg-image3.png") no-repeat center;
+	/* Imagem do banner, definindo que ela não pode se repetir, pois quando pede pra ela ocupar toda a tela, ela se repeta por padrão pra que isso aconteça e centralizada na tela com center */
+	background-size: cover;
+	/* Cobrir toda a tela, pois sem essa propriedade ela se estica em 100% do tamanho dela apenas e não da tela*/
+	margin-top: 80px;
+	/* Distãncia dela para o que está acima */
+	text-align: center;
+	/* Texto do banner centralizado */
+	padding-top: 80px;
+	/* Espaçamento inteiro do conteúdo do banner em relação ao topo */
+}
+
+.banner h1 {
+	font-size: 48px;
+	/* Tamanho da fonte do título */
+	color: #FFF;
+	/* Cor branca */
+	font-weight: bold;
+	/* Negrito */
+	text-transform: uppercase;
+	/* Tudo em maiúsculo */
+}
+
+/* Citação - banner inferior */
+
+.quote-externo {
+	color: white;
+	/* Cor da citação */
+}
+
+.quote-externo p {
+	font-style: italic;
+	/* Frase da citação em itálico */
+}
+
+.quote-externo p:before,
+.quote-externo p:after {
+	/* Linhas antes da citação e após */
+	content: "";
+	display: block;
+	/* Para começar em novas linhas */
+	width: 60px;
+	/* Largura da linha */
+	height: 3px;
+	/* Altura da linha */
+	background: #fff;
+	/* Cor da linha */
+	margin: 14px auto 10px auto;
+	/* Margem cima, direita, baixo e esquerda */
+}
+
+.quote-externo cite {
+	font-style: normal;
+	/* Tirando o itálico da nome do autor da citação */
+	font-weight: bold;
+	/* Deixando o nome em negrito */
+	font-size: 14px;
+	/* Tamanho da fonte */
+	letter-spacing: .1em;
+	/* Espaçamento entre as letras */
+}
+
+/* Dados dos ataques */
+
+.dados {
+	padding: 60px 0;
+	/* Espaçamento interno cima, baixo e esquerda e direita */
+}
+
+.dados_lista li {
+	background: rgb(230, 226, 226);
+	/* Cor de fundo das caixas */
+	border-radius: 10px;
+	text-align: center;
+	/* Texto alinhado ao centro */
+}
+
+.dados_lista li img {
+	/* Imagem refente aos dados */
+	margin: 0 auto;
+	/* Imagens alinhadas ao centro das caixas */
+}
+
+.dados_lista li h3 {
+	font-weight: bold;
+	/* Título em negrito */
+	font-size: 18px;
+	/* Tamanho da fonte */
+	line-height: 25px;
+	/* Espaçamento entre as linhas do título */
+	text-transform: uppercase;
+	/* Título em maiúsculo */
+	letter-spacing: .1em;
+	/* Espaçamento entre as letras do título */
+	margin-top: 20px;
+	/* Espaçamento do topo */
+}
+
+.dados_lista li h3:after {
+	/* Criação da linha em baixo do título */
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 2px auto;
+}
+
+.dados_lista li p {
+	padding: 10px 20px 20px 20px;
+	/* Espaçamento interno dos parágrafos */
+}
+
+.dados_icone {
+	background: #000;
+	/* Cor de fundo da imagem das caixas */
+	padding: 20px;
+	/* Espaçamento interno dela em relação as caixas */
+}
+
+/*Quebra*/
+
+.quebra {
+	width: 100%;
+	/* Container ocupando 100% da tela */
+	height: 220px;
+	/* Altura do container */
+	background: url("../img/background-image.png") no-repeat center;
+	/* Colocando essa imagem no container, dizendo pra ela não se repetir dentro dele e ficando centralizada */
+	background-size: cover;
+	/* Falando pra ela cobrir 100% dele */
+	text-align: center;
+	/* Alinhando o texto dentro dela para ficar centralizado na tela */
+	padding-top: 40px;
+	/* Espaçamento interno */
+}
+
+.quebra .quote-externo {
+	max-width: 400px;
+	/* Definindo um tamanho máximo que a citação pode ocupar */
+}
+
+/*Footer*/
+
+.footer {
+	width: 100%;
+	/* Container ocupando toda a largura da tela */
+	background: #000;
+	/* Cor de fundo */
+	color: #fff;
+	/* Cor do texto */
+	padding: 20px 0;
+	/* Espaçamento interno cima,baixo e direita e esquerda */
+}
+
+.footer h3 {
+	font-size: 18px;
+	/* Tamanho da fonte do Título do footer */
+	line-height: 25px;
+	/* Espaçamento entre as linhas do título */
+	color: rgb(12, 104, 209);
+	/* Cor do título */
+	text-transform: uppercase;
+	/* Transformar títulos em linha maiúscula */
+	letter-spacing: .1em;
+	/* Espaçamento entre as linhas dos títulos */
+	font-weight: bold;
+	/* Deixando os títulos em negrito */
+}
+
+.footer h3:after {
+	/* Criação das linhas após o título */
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: rgb(12, 104, 209);
+	margin: 6px 0 12px 0;
+}
+
+.footer_historia {
+	padding-right: 40px;
+	/* Espaçamento interno entre o conteúdo de sobre nós e o conteúdo de contato */
+}
+
+.footer_redes ul li {
+	display: inline-block;
+	/* Colocando os elementos em linha */
+	margin-right: 10px;
+	/* Deixando uma margem a direita entre um elemento e outro */
+}
+
+.footer_redes ul li a {
+	border: 3px solid rgb(12, 104, 209);
+	/* Cor da borda dos elementos */
+	display: block;
+	/* Colocando os ícones em bloco */
+	padding: 10px;
+	/* Espaçamento interno deles */
+}
+
+.footer_redes ul li a:hover {
+	border-color: #fff;
+	/* Cor quando passa o mouse em cima dos ícones */
+}
+
+.copy {
+	width: 100%;
+	/* Tamanho do container com 100% de largura da tela */
+	background: rgb(12, 104, 209);
+	/* Cor */
+	padding: 20px 0;
+	/* Espaçamento interno */
+}
+
+/* JavaScript para que as páginas sejam carregadas de forma suave, com as animações vindo de cima */
+
+.js [data-anime] {
+	/* Todos os elementos com a propriedade data-anime vão ter opacidade 0 de início, depois de escolher para onde vão ser animados, mudo para 1 na opacidade */
+	opacity: 0;
+}
+
+.js .fadeInDown {
+	transform: translate3d(0px, -20px, 0);
+	/* Direção que o texto animado vai translacionar. Assim ele está vindo de cima para baixo em 20 px por conta de estar no eixo y -20px */
+}
+
+.js .anime {
+	/* Quando o anime acontecer */
+	opacity: 1;
+	/* Vai ser mostrado na tela */
+	transform: none;
+	/* */
+	transition: opacity 800ms, transform 800ms;
+	/* tempo que vai demorar para que o texto a ser animado seja completamente exposto na tela */
+}
