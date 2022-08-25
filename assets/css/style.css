@@ -1,48 +1,73 @@
-*{
+/* @media only screen and (max-width: 600px) {
+    .caixa6{
+        background-image: url(/assets/imagens/imagem7.png);
+    }
+  } */
+
+
+.caixa6 {
+    background-image: url(/assets/imagens/imagem6.png);
+}
+
+
+
+
+* {
     padding: 0;
     margin: 0;
 }
-html,body{
+
+html,
+body {
     margin: 0;
     font: 16px "Lato", sans-serif;
     color: #777;
-    height: 100%;    
+    height: 100%;
 }
-p{
+
+p {
     margin-bottom: 20px;
 }
-h3{
+
+h3 {
     color: #111;
     text-transform: uppercase;
     text-align: center;
 }
-header{   
-    height: 80px;  
-    font: 16px "Lato", sans-serif;  
-    padding-top: 40px;      
-    text-align: center;  
+
+header {
+    height: 80px;
+    font: 16px "Lato", sans-serif;
+    padding-top: 40px;
+    text-align: center;
     background-color: black;
-    color:white;   
+    color: white;
 }
-footer{
-    height: 30px;    
-    font: 16px "Lato", sans-serif; 
-    clear:both; 
+
+footer {
+    height: 30px;
+    font: 16px "Lato", sans-serif;
+    clear: both;
     padding-top: 15px;
     text-align: center;
-    line-height: 10px;    
-    color: white;         
+    line-height: 10px;
+    color: white;
     background-color: rgb(31, 30, 30);
-    border: 3px solid black;    
+    border: 3px solid black;
 }
 
-div img{
+div img {
     border: 1px red solid;
     border-radius: 50%;
-    float:left;
+    float: left;
 }
 
-.caixa1, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6{
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4,
+.caixa5,
+.caixa6 {
     height: 100%;
     opacity: 0.7;
     position: relative;
@@ -51,60 +76,81 @@ div img{
     background-position: center;
     background-attachment: fixed;
 }
-.caixa1{
+
+.caixa1 {
     background-image: url(/assets/imagens/Imagem1.png);
 }
-.caixa2{
+
+.caixa2 {
     background-image: url(/assets/imagens/imagem2.png);
 }
-.caixa3{
+
+.caixa3 {
     background-image: url(/assets/imagens/imagem3.jpg);
 }
-.caixa4{
+
+.caixa4 {
     background-image: url(/assets/imagens/imagem4.jpg);
 }
-.caixa5{
+
+.caixa5 {
     background-image: url(/assets/imagens/imagem5.jpg);
 }
-.caixa6{
-    background-image: url(/assets/imagens/imagem6.png);
-}
-.conteudo-titulo{    
+
+
+.conteudo-titulo {
     position: absolute;
     left: 0;
-    top: 45%; 
+    top: 45%;
     width: 100%;
-    text-align: center;     
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
-.conteudo-titulo span.titulo{    
+.conteudo-titulo span.titulo {
     color: white;
     background-color: #777;
     padding: 18px;
-    font-size: 25px; 
+    font-size: 25px;
     letter-spacing: 5px;
-} 
-.conteudo{
+    width: 100%;
+}
+
+.conteudo {
     color: #777;
     background-color: white;
     text-align: justify;
     padding: 50px 80px;
 }
 
-.conteudo-integrantes{
+.conteudo-integrantes {
     color: #777;
-    background-color: white;    
-    position: flex;  
-    float: left;   
+    background-color: white;
+    position: flex;
+    float: left;
     text-align: left;
     padding: 50px 80px;
 }
 
-.descricao-integrantes{
+.descricao-integrantes {
     padding: 40px;
-    font: 20px "Lato", sans-serif; 
+    font: 20px "Lato", sans-serif;
     color: white;
-    position: flex; 
+    position: flex;
     background-color: #777;
     border: 1px red solid;
+}
+
+
+@media (max-width: 600px) {
+    .caixa6 {
+        background-image: url(/assets/imagens/imagem7.png);
+    }
+}
+
+@media (min-width: 601px) {
+    .conteudo-titulo span.titulo {
+        max-width: 40%;
+    }
 }
