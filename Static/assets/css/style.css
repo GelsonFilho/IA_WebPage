@@ -17,6 +17,8 @@ h3 {
     color: #111;
     text-transform: uppercase;
     text-align: center;
+    padding-top: 5px;
+    margin-bottom: 15px;
 }
 .header{    
     position: fixed;
@@ -81,25 +83,29 @@ h3 {
 /*############################################################  começo conteúdo  ############################################################*/
 .conteudo-titulo {
     position: absolute;
+    display: block;
+    margin-bottom: 30px;
     left: 0;
     top: 45%;
     width: 100%;
     text-align: center;
-    justify-content: center;
-    display: flex;  
+    justify-content: center;    
 }
 .conteudo-titulo span.titulo {
     color: white;
     background-color: #777;
     padding: 18px;
     font-size: 25px;
-    letter-spacing: 5px;
+    letter-spacing: 5px;    
 }
 .conteudo {
     color: #777;
     background-color: white;
-    text-align: justify;
-    padding: 50px 80px;
+    display: block;
+    margin-top: 30px;
+    line-height: 26px;
+    text-align: justify;    
+    padding: 50px 80px;    
 }
 /*############################################################  final conteúdo  ############################################################*/
 
