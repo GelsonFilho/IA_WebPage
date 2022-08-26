@@ -1,7 +1,8 @@
 /* Estilos Gerais */
 
-html{
-	scroll-behavior: smooth; /* Deixar o scroll ser realizado de uma maneira suave quando clicado em algum link do menu */
+html {
+	scroll-behavior: smooth;
+	/* Deixar o scroll ser realizado de uma maneira suave quando clicado em algum link do menu */
 }
 
 body {
@@ -12,9 +13,9 @@ body {
 p {
 	font-family: Georgia, "Times New Roman", serif;
 	/* Definição da fonte a ser utilizada nos parágrafos */
-	font-size: 14px;
+	font-size: 1rem;
 	/*Tamanho da fonte */
-	line-height: 20px;
+	line-height: 26px;
 	/* Espaçamento entre as linhas */
 }
 
@@ -32,7 +33,6 @@ img {
 	top: 0;
 	width: 100%;
 	background: black;
-	padding: 10px 0;
 	z-index: 10;
 }
 
@@ -43,7 +43,7 @@ img {
 .header_menu ul li {
 	display: inline-block;
 	margin-left: 25px;
-	margin-top: 20px;
+	margin-top: 25px;
 }
 
 .header_menu ul li a {
@@ -54,6 +54,8 @@ img {
 	font-size: 14px;
 	line-height: 20px;
 	padding: 10px 0;
+	transition: 0.3s ease;
+	/* Transição para quando passa o mouse em cima do menu */
 }
 
 .header_menu ul li a:hover {
@@ -61,13 +63,15 @@ img {
 }
 
 .btn {
-	border: 3px solid #fec63e;
-	/* Borda do botão tem 3px e nessa cor */
+	border: 2px solid #0f0;
+	/* Borda do botão tem 2px e nessa cor que será modificada no filter*/
 	padding: 10px 30px;
 	/*Espaçamento interno de 10px cima e baixo e 30px esquerda e direita */
-	color: #fec63e;
+	background-color: #000;
 	/* Cor do botão */
-	font-size: 14px;
+	color: white;
+	/* Cor do nome do botão */
+	font-size: 1rem;
 	/* tamanho da fonte do botão */
 	text-transform: uppercase;
 	/* Transforma todo o texto em maiúsculo */
@@ -75,13 +79,79 @@ img {
 	/* negrito */
 	letter-spacing: .1em;
 	/* Espaçamento entre as letras */
+	transition: 0.2s;
+	filter: hue-rotate(80deg);
+	/* Aplicando um filtro na cor do botão */
+	transition-delay: 0s;
+	/* Tempo de transição */
 }
 
 .btn:hover {
-	color: #fff;
 	/* Cor do botão quando passa o mouse por cima */
-	border-color: #fff;
-	/* Cor da borda do botão quando passa o mouse por cima dele */
+	transition-delay: 0.7s;
+	/* Tempo de transição do efeito após hover */
+	color: white;
+	/* Cor da letra do botão após o tempo de transição */
+	box-shadow: 0 0 10px #0f0,
+		/* Tamanhos e a cor da sombra do botão após transição */
+		0 0 20px #0f0,
+		0 0 40px #0f0,
+		0 0 80px #0f0,
+		0 0 160px #0f0;
+}
+
+.btn span {
+	position: relative;
+	z-index: 100;
+	/* Deixar sempre aparente o que está escrito no botão */
+}
+
+.btn::before {
+	content: '';
+	position: absolute;
+	left: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 2px;
+	background: #0f0;
+	box-shadow: 5px -8px 0 #0f0,
+		5px 8px 0 #0f0;
+	transition: width 0.2s, left 0.2s, height 0.2s, box-shadow 0.2s;
+	transition-delay: 0.4s, 0.2s, 0s, 0s;
+}
+
+.btn:hover::before {
+	width: 60%;
+	height: 100%;
+	left: -2px;
+	box-shadow: 5px 0px 0 #0f0,
+		5px 0px 0 #0f0;
+	transition-delay: 0s, 0.2s, 0.4s, 0.4s;
+}
+
+.btn::after {
+	content: '';
+	position: absolute;
+	right: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 2px;
+	background: #0f0;
+	box-shadow: -5px -8px 0 #0f0,
+		-5px 8px 0 #0f0;
+	transition: width 0.2s, left 0.2s, height 0.2s, box-shadow 0.2s;
+	transition-delay: 0.4s, 0.2s, 0s, 0s;
+}
+
+.btn:hover::after {
+	width: 60%;
+	height: 100%;
+	right: -2px;
+	box-shadow: -5px 0px 0 #0f0,
+		-5px 0px 0 #0f0;
+	transition-delay: 0s, 0.2s, 0.4s, 0.4s;
 }
 
 .subtitulo {
@@ -97,7 +167,7 @@ img {
 	/* Transformando tudo em maiúsculo */
 	text-align: center;
 	/* Alinhando o subtítulo ao centro */
-	margin-bottom: 40px;
+	margin: 40px auto 40px auto;
 	/* Espaçamento entre o Subtítulo e o conteúdo abaixo dele */
 }
 
@@ -106,7 +176,7 @@ img {
 	content: "";
 	display: block;
 	/* Display block faz com que o elemento inicie na próxima linha */
-	width: 60px;
+	width: 200px;
 	/* Largura da linha */
 	height: 3px;
 	/* Altura da linha */
@@ -121,13 +191,13 @@ img {
 .banner {
 	width: 100%;
 	/* Largura da imagem do banner em 100% da tela */
-	height: 380px;
+	height: 360px;
 	/* Altura do banner */
 	background: url("../img/bg-image3.png") no-repeat center;
 	/* Imagem do banner, definindo que ela não pode se repetir, pois quando pede pra ela ocupar toda a tela, ela se repeta por padrão pra que isso aconteça e centralizada na tela com center */
 	background-size: cover;
 	/* Cobrir toda a tela, pois sem essa propriedade ela se estica em 100% do tamanho dela apenas e não da tela*/
-	margin-top: 80px;
+	margin-top: 70px;
 	/* Distãncia dela para o que está acima */
 	text-align: center;
 	/* Texto do banner centralizado */
@@ -188,7 +258,7 @@ img {
 /* Dados dos ataques */
 
 .dados {
-	padding: 60px 0;
+	padding: 40px 0;
 	/* Espaçamento interno cima, baixo e esquerda e direita */
 }
 
@@ -209,14 +279,10 @@ img {
 .dados_lista li h3 {
 	font-weight: bold;
 	/* Título em negrito */
-	font-size: 18px;
+	font-size: 1rem;
 	/* Tamanho da fonte */
 	line-height: 25px;
-	/* Espaçamento entre as linhas do título */
-	text-transform: uppercase;
 	/* Título em maiúsculo */
-	letter-spacing: .1em;
-	/* Espaçamento entre as letras do título */
 	margin-top: 20px;
 	/* Espaçamento do topo */
 }
@@ -243,6 +309,53 @@ img {
 	/* Espaçamento interno dela em relação as caixas */
 }
 
+.titulo-dados {
+	color: white;
+	font-size: 1rem;
+}
+
+section.phishing {
+	margin-bottom: 60px;
+}
+
+section.phishing p {
+	line-height: 25px;
+}
+
+section#contato {
+	margin-bottom: 60px;
+}
+
+.container-flex {
+	display: flex;
+	gap: 40px;
+}
+
+.paragrafo-imagem {
+	max-width: 400px;
+}
+
+.container-imagem {
+	min-width: 400px;
+}
+
+.texto-abaixo-imagem {
+	margin: 40px auto;
+}
+
+.texto-vazamento {
+	margin-top: 40px;
+}
+
+.titulo-contato {
+	color: rgb(0, 0, 0);
+	line-height: 0px;
+}
+
+.titulo-contato:after {
+	width: 0;
+}
+
 /*Quebra*/
 
 .quebra {
@@ -265,77 +378,105 @@ img {
 	/* Definindo um tamanho máximo que a citação pode ocupar */
 }
 
-/*Footer*/
-
-.footer {
+.contatos {
 	width: 100%;
-	/* Container ocupando toda a largura da tela */
-	background: #000;
-	/* Cor de fundo */
-	color: #fff;
-	/* Cor do texto */
-	padding: 20px 0;
-	/* Espaçamento interno cima,baixo e direita e esquerda */
+	/* Container ocupando 100% da tela */
+	height: 220px;
+	/* Altura do container */
+	background: url("../img/facens.png") no-repeat center;
+	/* Colocando essa imagem no container, dizendo pra ela não se repetir dentro dele e ficando centralizada */
+	background-size: cover;
+	/* Falando pra ela cobrir 100% dele */
+	text-align: center;
+	/* Alinhando o texto dentro dela para ficar centralizado na tela */
+	padding-top: 40px;
+	/* Espaçamento interno */
 }
 
-.footer h3 {
-	font-size: 18px;
-	/* Tamanho da fonte do Título do footer */
-	line-height: 25px;
-	/* Espaçamento entre as linhas do título */
-	color: rgb(12, 104, 209);
-	/* Cor do título */
-	text-transform: uppercase;
-	/* Transformar títulos em linha maiúscula */
-	letter-spacing: .1em;
-	/* Espaçamento entre as linhas dos títulos */
+.contatos .contatos-fotos {
+	max-width: 400px;
+	/* Definindo um tamanho máximo que a citação pode ocupar */
+}
+
+/* INÍCIO PARTE CHARLES */
+
+.imagem-perfil {
+	margin: 5pt;
+	width: 80pt;
+	border-radius: 50%;
+	border: 2px solid;
+	border-color: #888;
+}
+
+.nome {
+	color: #222;
+	font-size: 20px;
 	font-weight: bold;
-	/* Deixando os títulos em negrito */
+	line-height: 2;
 }
 
-.footer h3:after {
-	/* Criação das linhas após o título */
-	content: "";
-	display: block;
-	width: 60px;
-	height: 3px;
-	background: rgb(12, 104, 209);
-	margin: 6px 0 12px 0;
+/* Sobre nós */
+
+.sobreGeral {
+	width: 100%;
+	margin: 0 auto;
+	padding: 60px 0;
+	background: url('/img/facens.png') no-repeat center;
+	background-size: cover;
 }
 
-.footer_historia {
-	padding-right: 40px;
-	/* Espaçamento interno entre o conteúdo de sobre nós e o conteúdo de contato */
+.sobre01 {
+	background-color: #eeeeeedd;
+	border-radius: 80px;
+	display: flex;
+	flex-direction: row;
+	color: #444;
 }
 
-.footer_redes ul li {
-	display: inline-block;
-	/* Colocando os elementos em linha */
-	margin-right: 10px;
-	/* Deixando uma margem a direita entre um elemento e outro */
+#conteúdo01 {
+	margin: 2px;
+	padding: 2px;
+	border: 2px;
 }
 
-.footer_redes ul li a {
-	border: 3px solid rgb(12, 104, 209);
-	/* Cor da borda dos elementos */
-	display: block;
-	/* Colocando os ícones em bloco */
-	padding: 10px;
-	/* Espaçamento interno deles */
+.sobre02 {
+	background-color: #eeeeeedd;
+	border-radius: 80px;
+	padding: 0;
+	margin: 10pt;
+	text-align: right;
+	display: flex;
+	flex-direction: row-reverse;
+	color: #444;
 }
 
-.footer_redes ul li a:hover {
-	border-color: #fff;
-	/* Cor quando passa o mouse em cima dos ícones */
+.socialMedia {
+	display: flex;
 }
+
+.socialMedia a {
+	margin-right: 20px;
+}
+
+#assinatura {
+	width: 100%;
+	background-color: #222;
+	color: #888;
+}
+
+/*Footer*/
 
 .copy {
 	width: 100%;
 	/* Tamanho do container com 100% de largura da tela */
-	background: rgb(12, 104, 209);
+	background: black;
 	/* Cor */
 	padding: 20px 0;
 	/* Espaçamento interno */
+}
+
+.paragrafo-copy {
+	color: white;
 }
 
 /* JavaScript para que as páginas sejam carregadas de forma suave, com as animações vindo de cima */
