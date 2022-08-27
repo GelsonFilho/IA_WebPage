@@ -433,6 +433,11 @@ section#contato {
 	color: #444;
 }
 
+#imagem{
+	display: flex;
+	align-items: center;
+}
+
 #conteúdo01 {
 	margin: 2px;
 	padding: 2px;

@@ -110,6 +110,18 @@
 		line-height: 20px;
 		padding-top: 14px;
 	}
+
+	p.nome{
+		font-size: 1.1rem;
+	}
+
+	.socialMedia {
+		justify-content: center;
+	}
+
+	.paragrafo-copy{
+		margin: 0 !important;
+	}
 }
 
 /* Final do estilo para smartphone */
