@@ -17,7 +17,7 @@
 	<header class="header">
 		<div class="container">
 			<a href="index.html" class="grid-4">
-				<img src="img/Connor.png" alt="Connor Cibersec">
+				<img src="/Dynamic/img/Connor.png" alt="Connor Cibersec">
 			</a>
 			<nav class="grid-12 header_menu">
 				<ul class="nav-menu">
@@ -39,34 +39,67 @@
 		</div>
 	</section>
 
-	<section id="recentes" class="dados container fadeInDown" data-anime="1200">
-		<h2 class="subtitulo">Notícias Recentes</h2>
+	<section class="dados container fadeInDown" data-anime="1200">
+		<h2 class="subtitulo">Cenário atual</h2>
+		<p>Nos últimos anos – especialmente após o inicio da pandemia, vem se observando um grande aumento de incidentes
+			de crimes cibernéticos, que tem como alvo pessoas, empresas e governos.
+
+			A Deep Instinct disponibiliza em seu relatório “Cyber Threat Landscape Report” a evolução dos tipos de
+			malware utilizados em ataques (confira a imagem abaixo). Notavelmente, houve um grande aumento no uso de
+			ransonware pelos ofensores cibernéticos. </p><br><br>
+		<img src="/Dynamic/img/imagem-ataques.png" alt="Ocorrência de ataques cibernéticos"><br><br>
+		<p>Ataques de ransomware estão relacionados a vazamento de dados, perca de acesso a arquivos e informações
+			relevantes. Segundo a IBM Security, em 2021, os ataques de ransomware geraram, globalmente, em média, um
+			prejuízo de 4,62 milhões de dólares por ataque. O impacto financeiro também pode ser observado no prejuízo
+			causado por este tipo de ataque (ou então, na perspectiva do ofensor, no aumento de receita), como
+			documentado no relatório da World Economic Forum, Global Threat Report, onde pode ser observado em 2020 um
+			aumento de 447% em relação ao ano anterior </p><br><br>
+		<img src="/Dynamic/img/imagem-cryptocurrency.png" alt="Valores das moedas em milhões de dólares"><br><br>
+		<p>Certamente a defesa das empresas e governos precisa se adaptar a este novo cenário global, onde os criminosos
+			modernizaram suas táticas e vem ganhando muito dinheiro com estas novas técnicas.
+
+			E não basta que um ou outro executivo diga que vai injetar dinheiro em tecnologias para prevenir novos
+			incidentes (já dizia Bruce Schneider – “Se você acha que tecnologia pode resolver seus problemas de
+			segurança, então você não conhece os problemas e você não entende a tecnologia”).
+
+			A segurança de uma empresa depende de uma grande mudança que envolve todas as pessoas e processos, uma
+			readequação de cultura, onde todos devem estar cientes das políticas de segurança da empresa, pois, ao se
+			aproveitar das falhas humanas é que a grande maioria dos ataques consegue se tornar um incidente de sucesso
+			(para o criminoso). Para saber mais sobre a implantação de segurança no ambiente corporativo consulte o
+			Framework de Segurança NIST.
+
+			Mas voltando a falar de tecnologia, controles de segurança e, porque não, Inteligência Artificial, apesar de
+			não poderem sozinhas garantir que uma empresa está segura, certamente será de grande ajuda. Como a OWASP
+			afirma: </p>
+		<p>O objetivo da segurança em aplicações é manter a confidencialidade, integridade e disponibilidade dos
+			recursos de informação a fim de permitir que as operações de negócios sejam bem-sucedidas e esse objetivo é
+			alcançado através da implementação de controles de segurança (OWASP, 2012). </p>
+		<p>E o uso de inteligência artificial tem se mostrado bastante eficiente no mundo corporativo. </p>
+	</section>
+
+	<section id="recentes" class="dados container">
+		<h2 class="subtitulo">Dados Recentes</h2>
 
 		<ul class="dados_lista">
 			<li class="grid-1-3">
 				<div class="dados_icone">
-					<h3 class="titulo-dados">Quanto custa combater a criminalidade cibernética?</h3>
+					<h3 class="titulo-dados">Custo Médio de um incidente com vazamento de dados em 2020</h3>
 				</div>
-				<p>Para se precaver contra tentativas de interceptação e uso de dados não autorizados, obtidos por meio
-					de e-mails falsos ou de invasões de brechas de sites ou aplicativos, é preciso agir
-					estrategicamente. Soma-se a isso a necessidade de contar com o suporte de soluções que...</p>
+				<p>3,86 USD Global, 1,12USD Brasil </p>
 			</li>
 
 			<li class="grid-1-3">
 				<div class="dados_icone">
-					<h3 class="titulo-dados">Quais são as bases que garantem o sucesso da AIoT?</h3>
+					<h3 class="titulo-dados">Custo Médio de um incidente com vazamento de dados em 2021</h3>
 				</div>
-				<p>De fato, a Inteligência Artificial das Coisas (AIoT) não terá sucesso sem segurança e privacidade. Na
-					visão emergente de um mundo hiperconectado, existe muita inteligência interativa ...</p>
+				<p>4,24 USD Global, 1,08USD Brasil </p>
 			</li>
 
 			<li class="grid-1-3">
 				<div class="dados_icone">
-					<h3 class="titulo-dados">AIoT: qual o poder da união entre IA e IoT?</h3>
+					<h3 class="titulo-dados">Custo Médio de um incidente com vazamento de dados em 2022</h3>
 				</div>
-				<p>A pandemia de Covid-19, as mudanças climáticas e a digitalização já estão mudando as necessidades e
-					desejos das pessoas. O foco é em saúde, sustentabilidade e segurança de dados. Para lidar com essa
-					rápida transformação...</p>
+				<p> 4,35 USD Global, 1,38USD Brasil </p>
 			</li>
 		</ul>
 	</section>
@@ -75,7 +108,7 @@
 		<h2 class="subtitulo">Segurança Corporativa</h2>
 		<div class="container-flex">
 			<div class="container-imagem">
-				<img src="/Dynamic/img/img-grafico.png" alt="Gráfico de impacto vazamento de dados">
+				<img src="/Dynamic/img/imagem-custo-vazamento.png" alt="Gráfico de impacto vazamento de dados">
 			</div>
 			<div class="container-conteudo">
 				<p class="paragrafo-imagem">Em seu relatório “Cost of a Data Breach Report” [1], a IBM Security
@@ -112,11 +145,26 @@
 			</p>
 		</div>
 		<div>
-			<img src="/Dynamic/img/img-tempo-vazamento.png"
-				alt="Tempo0 médio para identificar e conter um vazamento de dados">
+			<img src="/Dynamic/img/img-tempo-vazamento.png" alt="Tempo0 médio para identificar e conter um vazamento de dados">
 			<p class="texto-vazamento">O uso de IA então se provou como uma forma de aumentar a velocidade de detecção e
 				contenção de ameaças.</p>
 		</div>
+	</section>
+
+	<section id="machine-learning" class="dados container fadeInDown">
+		<h2 class="subtitulo">Adversarial Machine Learning</h2>
+		<p>Nem tudo envolvendo o uso de Inteligência Artificial se traduz em benefícios para as empresas e usuários.
+			Criminosos cibernéticos encontraram formas de explorar vulnerabilidades no uso de IA. </p><br>
+		<p>Sistemas de Machine Learning estão sujeitos a serem utilizados for ofensores cibernéticos de forma a explorar
+			vulnerabilidades, podendo nestes casos servir como forma de prejudicar o sistema de uma empresa, ou mesmo
+			uma tentativa de enfraquecer suas defesas, pois, como já vimos, há sistemas de segurança que usam Machine
+			Learning para monitorar a ocorrência de incidentes. A Microsoft documenta 11 tipos de ataques intencionais a
+			sistemas de Machine Learning [46].
+
+			O esquema abaixo, retirado do “FY21 Microsoft Digital Defense Report”[47], ilustra como pode ser feita esta
+			exploração de vulnerabilidade. </p>
+		<img src="/Dynamic/img/imagem-machine-learning.png" alt="adversarial machine learning">
+
 	</section>
 
 	<div id="sobre" class="sobreGeral">

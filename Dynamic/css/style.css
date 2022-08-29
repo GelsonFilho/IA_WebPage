@@ -332,7 +332,7 @@ section#contato {
 }
 
 .paragrafo-imagem {
-	max-width: 400px;
+	max-width: 500px;
 }
 
 .container-imagem {
@@ -354,28 +354,6 @@ section#contato {
 
 .titulo-contato:after {
 	width: 0;
-}
-
-/*Quebra*/
-
-.quebra {
-	width: 100%;
-	/* Container ocupando 100% da tela */
-	height: 220px;
-	/* Altura do container */
-	background: url("../img/background-image.png") no-repeat center;
-	/* Colocando essa imagem no container, dizendo pra ela não se repetir dentro dele e ficando centralizada */
-	background-size: cover;
-	/* Falando pra ela cobrir 100% dele */
-	text-align: center;
-	/* Alinhando o texto dentro dela para ficar centralizado na tela */
-	padding-top: 40px;
-	/* Espaçamento interno */
-}
-
-.quebra .quote-externo {
-	max-width: 400px;
-	/* Definindo um tamanho máximo que a citação pode ocupar */
 }
 
 .contatos {
@@ -421,7 +399,7 @@ section#contato {
 	width: 100%;
 	margin: 0 auto;
 	padding: 60px 0;
-	background: url('/Dynamic/img/facens.png') no-repeat center;
+	background: url("../img/facens.png") no-repeat center;
 	background-size: cover;
 }
 
