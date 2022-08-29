@@ -193,44 +193,41 @@ h3 {
 
 /*------------------------------------------------ começo conteiner integrantes ------------------------------------------------*/
 .conteiner-integrantes{
-    position: static; 
+    display: block; 
+    position: absolute;
     width: 100%;
-    height: 1050px;
+    height: 100%;
     background-image: url(/Static/assets/imagens/facens.jpg);
     border: 5px red dashed;
 }
 .conteiner-integrantes1, .conteiner-integrantes2, .conteiner-integrantes3, .conteiner-integrantes4, .conteiner-integrantes5{
-    position: relative;  
+    display: block;  
+    position: absolute;  
     opacity: 0.8;        
-    width: 40%;
-    height: 151px;                 
+    width: 650px;
+    height: 150px;                 
     background: white;
     border-radius: 100px;   
 } 
 .conteiner-integrantes1{
-    float: left;  
-    top: 30px;
-    left: 10px;         
+    top: 50px;
+    left: 200px;         
 } 
 .conteiner-integrantes2{
-    float:right; 
-    top: 180px;   
-    right: 10px;       
+    top: 200px;   
+    right: 200px;       
 } 
 .conteiner-integrantes3{
-    float: left;  
-    top: 230px;
-    left: 10px;     
+    top: 350px;
+    left: 200px;     
 } 
 .conteiner-integrantes4{
-    float:right; 
-    top: 380px;   
-    right: 10px;    
+    top: 500px;   
+    right: 200px;    
 } 
 .conteiner-integrantes5{
-    float: left;  
-    top: 430px;
-    left: 10px;     
+    top: 650px;
+    left: 200px;     
 } 
 /*------------------------------------------------ final conteiner integrantes ------------------------------------------------*/
 
@@ -260,7 +257,6 @@ h3 {
 }
 .integrantes-foto5{   
     background-image: url(/Static/assets/imagens/renan.png);  
-
 }
 /*------------------------------------------------ final integrantes fotos ------------------------------------------------*/
 
@@ -282,7 +278,7 @@ h3 {
 
 
 /*------------------------------------------------ comeco integrantes social medias ------------------------------------------------*/
-.socialmedias-linkedin{
+.socialmedias-linkedin, .socialmedias-github{
     position: absolute;
     top: 110px;
     left: 160px;
@@ -292,15 +288,9 @@ h3 {
     background-size: cover;
     border-radius: 50%;     
 }
-.socialmedias-github{
-    position: absolute;
-    top: 110px;
-    left: 200px;
-    background-image: url(/Static/assets/imagens/github.png);
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    border-radius: 50%;    
+.socialmedias-github{     
+    left: 190px;
+    background-image: url(/Static/assets/imagens/github.png);        
 }
 /*------------------------------------------------ final integrantes social medias ------------------------------------------------*/
 
@@ -310,39 +300,75 @@ h3 {
     .caixa6 {
         background-image: url(/Static/assets/imagens/Imagem7-2.png);
     }
+    .conteiner-integrantes{
+        display: block; 
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(/Static/assets/imagens/facens.jpg);
+        border: 5px red dashed;
+    }
     .conteiner-integrantes1, .conteiner-integrantes2, .conteiner-integrantes3, .conteiner-integrantes4, .conteiner-integrantes5{
-        display: block;
+        display: block;  
         position: absolute;  
         opacity: 0.8;        
-        width: 100%;
-        height: 151px;                 
-        background: rgb(194, 11, 11);
+        width: 500px;
+        height: 135px;                 
+        background: white;
         border-radius: 100px;   
     } 
+    .conteiner-integrantes1{
+        top: 10px;
+        left: 10px;         
+    } 
+    .conteiner-integrantes2{
+        top: 190px;
+        left: 10px;       
+    } 
+    .conteiner-integrantes3{
+        top: 370px;
+        left: 10px;    
+    } 
+    .conteiner-integrantes4{
+        top: 560px;
+        left: 10px;    
+    } 
+    .conteiner-integrantes5{
+        top: 750px;
+        left: 10px;   
+    } 
+
     .integrantes-descricao{
         position: absolute;  
-        width: 700px; 
         top: 15px;     
-        left: 150px;
-        font: 24px "Lato", sans-serif;   
+        left: 135px;
+        font: 18px "Lato", sans-serif;   
         text-align: left;
         color: black;   
     }
-    .integrantes-foto1{   
-        background-image: url(/Static/assets/imagens/charles.jpg);     
+
+    .integrantes-foto1, .integrantes-foto2, .integrantes-foto3, .integrantes-foto4, .integrantes-foto5{
+        top:10px;
+        left: 10px;
+        width: 120px;
+        height: 120px;
+        background-size: cover;    
+        border-radius: 50%;   
     }
-    .integrantes-foto2{       
-        background-image: url(/Static/assets/imagens/gelson.jpg);      
+
+    .socialmedias-linkedin, .socialmedias-github{
+        position: absolute;
+        top: 90px;
+        left: 140px;
+        background-image: url(/Static/assets/imagens/linkedin.png);
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        border-radius: 50%;     
     }
-    .integrantes-foto3{   
-        background-image: url(/Static/assets/imagens/leo.jpg);  
-    }
-    .integrantes-foto4{   
-        background-image: url(/Static/assets/imagens/lucca.jpg);      
-    }
-    .integrantes-foto5{   
-        background-image: url(/Static/assets/imagens/renan.png);  
-    
+    .socialmedias-github{     
+        left: 170px;
+        background-image: url(/Static/assets/imagens/github.png);        
     }
 }
 
