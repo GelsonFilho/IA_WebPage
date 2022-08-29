@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;   
-    border: 0;
+    border: 0;    
 }
 ul,ol,li{
     list-style: none;
@@ -19,20 +19,24 @@ h3 {
     color: #111;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
     margin-bottom: 15px;
+}
+
+h3.explanation{
+    display: block;
+    margin-top: 30px;  
 }
 .container-cabecalho{  
     position: fixed;
     width: 100%;
     height: 85px;
 	background: black;		    
-    z-index: 1;
-    border: 3px dashed purple;      
+    z-index: 1;     
 }
 .imagem-cabecalho{ 
-    padding-left: 482px;    
-    padding-top: 10px;   	
+    position: absolute;
+    left: 487px;              	
 }
 .footer {
     height: 30px;
@@ -46,21 +50,20 @@ h3 {
     border: 3px solid black;
 }
 .caixa0, .caixa1,.caixa2,.caixa3,.caixa4,.caixa5,.caixa6 {
-    position: relative;
+    position: relative;    
     width: 100%;
     height: 100%;
     opacity: 0.7;
     background-repeat: no-repeat;
     background-size: cover;  
-    background-attachment: fixed;  
-    
-    border: 3px dashed green;    
+    background-attachment: fixed;       
 }
 .caixa0 {
-    top: 90px;
+    top: 85px;
     background-image: url(/Static/assets/imagens/imagem0.jpg);         
 }
 .caixa1 {
+    top: 85px;
     background-image: url(/Static/assets/imagens/imagem1.jpg);    
 }
 .caixa2 {
@@ -100,15 +103,20 @@ h3 {
 .conteudo,.conteudo-first {
     color: #777;
     background-color: white;
-    display: block;
+    display: block;     
     margin-top: 30px;
     line-height: 26px;
     text-align: justify;    
-    padding: 50px 80px;    
-    border: 3px chocolate solid;
+    padding: 50px 80px;     
 }
 .conteudo-first{
     margin-top: 90px;
+}
+
+.imagem-content{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
 }
 /*############################################################  final conteúdo  ############################################################*/
 
@@ -118,8 +126,6 @@ h3 {
 
 /*------------------------------------------------ começo conteiner citação ------------------------------------------------*/
 .citacao-conteiner{
-
-
     position: absolute;
     top: 40%;
     left: 25%;      
@@ -144,7 +150,6 @@ h3 {
     background-size: cover;    
     border-radius: 50%;   
 }
-
 .citacao-foto1{
     background-image: url(/Static/assets/imagens/johan-gerber.jpg);
 }
@@ -197,8 +202,7 @@ h3 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(/Static/assets/imagens/facens.jpg);
-    border: 5px red dashed;
+    background-image: url(/Static/assets/imagens/facens.jpg);    
 }
 .conteiner-integrantes1, .conteiner-integrantes2, .conteiner-integrantes3, .conteiner-integrantes4, .conteiner-integrantes5{
     display: block;  
@@ -298,7 +302,43 @@ h3 {
 
 @media (max-width: 600px) {
     .caixa6 {
-        background-image: url(/Static/assets/imagens/Imagem7-2.png);
+        background-image: url(/Static/assets/imagens/Imagem7.png);
+    }
+    .imagem-cabecalho{ 
+        left: 50px;
+        padding-top: 10px;   	
+    }
+    .citacao-conteiner{
+        position: absolute;
+        top: 20%;
+        left: 15%;      
+        width: 450px;
+        height: 400px;            
+        background: #EEEEEE;
+        border: 2px dashed black;  
+        border-radius: 100px;                
+    } 
+    .citacao-foto1, .citacao-foto2, .citacao-foto3, .citacao-foto4, .citacao-foto5{
+        position: absolute;
+        top: 50px;
+        left: 30%;
+        width: 140px;
+        height: 130px;
+        background-size: cover;    
+        border-radius: 50%;   
+    }
+    .citacao-descricao{
+        display: block;   
+        position: relative;  
+        top: 155px;  
+        left: -115px;               
+        width: 400px;         
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;            
+        color: black;   
+        ;
     }
     .conteiner-integrantes{
         display: block; 
@@ -306,7 +346,7 @@ h3 {
         width: 100%;
         height: 100%;
         background-image: url(/Static/assets/imagens/facens.jpg);
-        border: 5px red dashed;
+        
     }
     .conteiner-integrantes1, .conteiner-integrantes2, .conteiner-integrantes3, .conteiner-integrantes4, .conteiner-integrantes5{
         display: block;  
@@ -369,6 +409,7 @@ h3 {
     .socialmedias-github{     
         left: 170px;
         background-image: url(/Static/assets/imagens/github.png);        
-    }
+    }   
+    
 }
 
